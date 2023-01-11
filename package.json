@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"pnpm exec tailwindcss -i ./styles/tailwind.src.css -o ./styles/tailwind.css --watch\" \"next dev\" \"pnpm ts:lint\"",
+    "dev": "concurrently \"pnpm exec tailwindcss -i ./styles/tailwind.src.css -o ./styles/tailwind.css --watch\" \"next dev\"",
     "build": "concurrently \"pnpm exec tailwindcss -i ./styles/tailwind.src.css -o ./styles/tailwind.css --minify\" \"next build\"",
     "start": "next start",
-    "lint": "next lint",
-    "ts:lint": "tsc --noEmit --incremental --watch"
+    "lint": "next lint"
   },
   "dependencies": {
     "@next/font": "13.1.1",
