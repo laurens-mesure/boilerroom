@@ -1,0 +1,8 @@
+dist
+node_modules
+typings
+storybook-static
+pnpm-lock.yaml
+pnpm-workspace.yaml
+tailwind.css
+api.ts
