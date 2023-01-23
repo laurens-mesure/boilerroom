@@ -1,4 +1,4 @@
-# Boilerroom
+# Boiler Room
 
 Basic boilerplate setup for Next.js with Typscript and Tailwindcss.
 
