@@ -1,18 +1,11 @@
 module.exports = {
-  env: {
-    node: true,
-    es2022: true,
-    jest: true,
-  },
   extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "next", "prettier"],
   ignorePatterns: [
     ".eslintrc.js",
     "dist",
-    "jest.config.js",
     "node_modules",
     "pnpm-lock.yaml",
     "pnpm-workspace.yaml",
-    "api.ts",
   ],
   plugins: ["@typescript-eslint", "simple-import-sort", "sort-destructure-keys", "unused-imports"],
   settings: {
@@ -37,9 +30,6 @@ module.exports = {
         groups: [
           // Packages. `react` related packages come first.
           ["^react", "^@?\\w"],
-          // Internal packages.
-          // TODO: change this back to @app
-          ["^(@|@harbours.io|@ui|components|utils|types|config)(/.*|$)"],
           // Side effect imports.
           ["^\\u0000"],
           // Parent imports. Put `..` last.
